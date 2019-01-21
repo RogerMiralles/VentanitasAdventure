@@ -29,5 +29,41 @@ namespace TextAdventureXam
             
         }
 
+        public void PalSur(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "sur";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void PalEste(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "este";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void PalOeste(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "oeste";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
     }
 }
