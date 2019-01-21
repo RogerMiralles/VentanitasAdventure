@@ -19,8 +19,8 @@
             
             <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" >
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Button Text="Norte" Clicked="PalNorte" HorizontalOptions="Center" ></Button>
-                    <Button Text="Sur" Clicked="PalSur" HorizontalOptions="Center"></Button>
+                    <Button Text="Norte" Clicked="PalNorte"></Button>
+                    <Button Text="Sur" Clicked="PalSur"></Button>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Button Text="Este" Clicked="PalEste"></Button>
