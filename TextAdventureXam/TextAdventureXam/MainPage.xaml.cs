@@ -16,6 +16,7 @@ namespace TextAdventureXam
             Program juego = Program.ObteJuego();
             Thread thrad = new Thread(new ThreadStart(juego.Antonio));
             thrad.Start();
+            
         }
         
         
@@ -63,6 +64,148 @@ namespace TextAdventureXam
             {
                 Monitor.PulseAll(Program.ObteJuego());
                 Program.ObteJuego().comando = "oeste";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoHelp(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "help";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoMap(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "map";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoClear(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "clear";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoCoger(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "coger";
+                Monitor.Exit(Program.ObteJuego());
+            }
+        }
+
+        public void ComandoEquipar(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "equipar";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoDesequipar(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "desequipar";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoMochila(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "mochila";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+        public void ComandoStats(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "stats";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoSoltar(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "soltar";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoSala(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "sala";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoEquipo(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "equipo";
+                Monitor.Exit(Program.ObteJuego());
+            }
+
+        }
+
+        public void ComandoConsumir(object sender, EventArgs e)
+        {
+            bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
+            if (tieneLock)
+            {
+                Monitor.PulseAll(Program.ObteJuego());
+                Program.ObteJuego().comando = "consumir";
                 Monitor.Exit(Program.ObteJuego());
             }
 
