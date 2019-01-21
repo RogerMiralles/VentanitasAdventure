@@ -13,9 +13,11 @@
                 <RowDefinition Height="0.4*"/>
             </Grid.RowDefinitions>
 
-            <Editor BackgroundColor="Black" TextColor="White" IsEnabled="False" 
+            <Editor BackgroundColor="Black" TextColor="White" IsEnabled="True" 
                     HeightRequest="700" Grid.Row="0"
-                    Text="hoallalallalal            dddddddddddd"> 
+                    Text="aaaaaaaaaaaaaaaaaaaaaaa
+                    baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    baaaaaaaaaaaaaaaaaaaaaab"> 
                     
             </Editor>
             

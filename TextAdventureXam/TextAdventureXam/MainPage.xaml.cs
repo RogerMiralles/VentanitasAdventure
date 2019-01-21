@@ -14,9 +14,12 @@ namespace TextAdventureXam
             InitializeComponent();
             Program.CreaJuego();
             Program juego = Program.ObteJuego();
-            Thread thrad = new Thread(new ThreadStart(juego.Antonio));            
+            Thread thrad = new Thread(new ThreadStart(juego.Antonio));
+            thrad.Start();
         }
         
+        
+
         public void PalNorte(object sender, EventArgs e)
         {
             bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
