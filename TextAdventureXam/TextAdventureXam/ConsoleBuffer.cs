@@ -74,7 +74,7 @@ namespace TextAdventureXam
 
         public void PrintScreen()
         {
-            Console.SetCursorPosition(0, 0);
+            //Console.SetCursorPosition(0, 0);
             for(int i = 0; i<lines.Length; i++)
             {
                 Console.WriteLine(lines[i]);
@@ -90,7 +90,7 @@ namespace TextAdventureXam
                 lines[i] = str;
             }
 
-            Console.SetCursorPosition(0, height-2);
+            //Console.SetCursorPosition(0, height-2);
         }
 
         public void PrintText(int start)

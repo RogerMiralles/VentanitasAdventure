@@ -11,13 +11,14 @@ namespace TextAdventureXam
         {
             List<string> resultado = new List<string>();
             string temp = "";
-            using (StreamReader fs = File.OpenText(path))
+            /*using (StreamReader fs = File.OpenText(path))
             {
                 while ((temp = fs.ReadLine()) != null)
                 {
                     resultado.Add(temp);
                 }
-            }
+            }*/
+            resultado.Add("sala");
             return resultado.ToArray();
         }
 

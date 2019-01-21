@@ -71,7 +71,7 @@ namespace TextAdventureXam
             ConsoleBuffer.ObteBuffer().PrintBackground();
             ConsoleBuffer.ObteBuffer().PrintText(height - 3);
             ConsoleBuffer.ObteBuffer().PrintScreen();
-            Console.ReadKey();
+            //Console.ReadKey();
             ConsoleBuffer.ObteBuffer().ClearBox();
         }
 
@@ -99,7 +99,7 @@ namespace TextAdventureXam
             do
             {
                 //Pon el cursos en la posicion de escribir
-                Console.SetCursorPosition(1, 18);
+                //Console.SetCursorPosition(1, 18);
 
                 Monitor.Enter(this);
                 Monitor.Wait(this);
