@@ -151,6 +151,7 @@ namespace TextAdventureXam
             }
 
         }
+
         public void ComandoStats(object sender, EventArgs e)
         {
             bool tieneLock = Monitor.TryEnter(Program.ObteJuego());
