@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{5F9E1064-F509-48AC-AA81-7CCC704A33E6}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TextAdventureXam</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Comandos\Comando.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CombatClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ConsoleBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomMath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemigo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EscenaCombate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemArmor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemConsumable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemEquipable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemGema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemPocion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemScroll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Items\ItemWeapon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Level.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Maldiciones\Maldicion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Program.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\Room.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomBless.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomClosed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomExit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomTreasure.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Text\" />
+  </ItemGroup>
+</Project>

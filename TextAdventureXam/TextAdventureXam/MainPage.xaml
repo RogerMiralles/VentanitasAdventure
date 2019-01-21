@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TextAdventureXam"
+             x:Class="TextAdventureXam.MainPage">
+
+    
+    <StackLayout>
+        <!-- Place new controls here -->        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.4*"/>
+            </Grid.RowDefinitions>
+
+            <Editor BackgroundColor="Black" TextColor="White" IsEnabled="False" HeightRequest="700" Grid.Row="0" Text="hoallalallalal            dddddddddddd"> 
+                    
+            </Editor>
+            
+            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="Norte" Clicked="PalNorte" HorizontalOptions="Center" ></Button>
+                    <Button Text="Sur" HorizontalOptions="Center"></Button>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="Este"></Button>
+                    <Button Text="Oeste"></Button>
+                </StackLayout>                                           
+            </StackLayout>            
+        </Grid>       
+    </StackLayout>
+</ContentPage>
