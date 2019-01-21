@@ -12,7 +12,7 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="0.4*"/>
             </Grid.RowDefinitions>
-//hola
+
             <Editor BackgroundColor="Black" TextColor="White" IsEnabled="False" HeightRequest="700" Grid.Row="0" Text="hoallalallalal            dddddddddddd"> 
                     
             </Editor>
