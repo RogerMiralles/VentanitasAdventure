@@ -13,21 +13,20 @@
                 <RowDefinition Height="0.4*"/>
             </Grid.RowDefinitions>
             
-
             <ScrollView x:Name="Textbox" BackgroundColor="Black" IsEnabled="True" 
-                    HeightRequest="700" Grid.Row="0">
+                    HeightRequest="700" Grid.Row="0" >
                 <Label x:Name="texto1" TextColor="White" Font="Consolas" FontSize="Small"></Label> 
             </ScrollView>
             
-            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" >
+            <StackLayout Grid.Row="1"  Orientation="Vertical" VerticalOptions="Center" >
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
                     <Button  Text="te" Clicked="testEscribir"/>
                     <Button  Text="Norte" Clicked="PalNorte"></Button>
                     <Button  Text="Sur" Clicked="PalSur"></Button>
                 </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
                     <Button Text="Este" Clicked="PalEste"></Button>
-                    <Button Text="Oeste" Clicked="PalOeste"></Button>
+                    <Button  Text="Oeste" Clicked="PalOeste"></Button>
                 </StackLayout>                                           
             </StackLayout>            
         </Grid>       
