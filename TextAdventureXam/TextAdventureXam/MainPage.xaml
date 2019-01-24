@@ -15,7 +15,7 @@
 
             <ScrollView x:Name="Textbox" BackgroundColor="Black" IsEnabled="True" 
                     HeightRequest="700" Grid.Row="0">
-                <Label x:Name="texto1" TextColor="White"></Label> 
+                <Label x:Name="texto1" TextColor="White" Font="Consolas" FontSize="Small"></Label> 
             </ScrollView>
             
             <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" >
