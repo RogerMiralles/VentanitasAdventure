@@ -77,14 +77,15 @@ namespace TextAdventureXam
 
         public void PrintScreen()
         {
+            string[] temp= (string[])lines.Clone();
             Device.BeginInvokeOnMainThread(() => {
                 //Console.SetCursorPosition(0, 0);
                 pantalla.Text = "";
-            for (int i = 0; i<lines.Length; i++)
+            for (int i = 0; i<temp.Length; i++)
             {
                 //Console.WriteLine(lines[i]);               
                
-                    pantalla.Text += lines[i];
+                    pantalla.Text += temp[i]+"\n";
                 
             }
             });
