@@ -36,7 +36,7 @@ namespace TextAdventureXam
         public  void Antonio()
         {
             //Console.SetWindowSize(121, 22);
-            ConsoleBuffer.CreaBuffer(width, height, height - 4,this);
+            
             ConsoleKeyInfo k;
             do
             {

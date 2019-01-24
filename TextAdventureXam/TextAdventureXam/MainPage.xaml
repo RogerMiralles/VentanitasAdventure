@@ -13,16 +13,14 @@
                 <RowDefinition Height="0.4*"/>
             </Grid.RowDefinitions>
 
-            <Editor BackgroundColor="Black" TextColor="White" IsEnabled="True" 
-                    HeightRequest="700" Grid.Row="0"
-                    Text="aaaaaaaaaaaaaaaaaaaaaaa
-                    baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    baaaaaaaaaaaaaaaaaaaaaab"> 
-                    
-            </Editor>
+            <ScrollView x:Name="Textbox" BackgroundColor="Black" IsEnabled="True" 
+                    HeightRequest="700" Grid.Row="0">
+                <Label x:Name="texto1" TextColor="White">aaaaaaaaaaaaaaaaaaa</Label> 
+            </ScrollView>
             
             <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center" >
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="te" Clicked="testEscribir"/>
                     <Button Text="Norte" Clicked="PalNorte"></Button>
                     <Button Text="Sur" Clicked="PalSur"></Button>
                 </StackLayout>

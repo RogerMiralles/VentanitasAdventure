@@ -9,17 +9,25 @@ namespace TextAdventureXam
 {
     public partial class MainPage : ContentPage
     {
+        
         public MainPage()
         {
             InitializeComponent();
             Program.CreaJuego();
             Program juego = Program.ObteJuego();
+            ConsoleBuffer.CreaBuffer(120, 30, 30 - 4, juego, texto1);
             Thread thrad = new Thread(new ThreadStart(juego.Antonio));
             thrad.Start();
             
-        }
+            //TextBox.Text = "hola";
+            //Label e = (Label) TextAdventureXam.texto1;
+
+        }       
         
-        
+        public void testEscribir(object sender,EventArgs e)
+        {
+            texto1.Text = "aaaaaa1234";
+                }
 
         public void PalNorte(object sender, EventArgs e)
         {

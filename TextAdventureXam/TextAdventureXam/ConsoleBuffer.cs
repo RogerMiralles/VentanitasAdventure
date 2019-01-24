@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace TextAdventureXam
 {
     class ConsoleBuffer
     {
+        private Label pantalla;
         private string[] lines;
         public int width;
         public int height;
@@ -15,11 +17,11 @@ namespace TextAdventureXam
         private Program juego;
         private static ConsoleBuffer buffer; 
 
-        public static void CreaBuffer(int width, int height, int sizeTextBox, Program x)
+        public static void CreaBuffer(int width, int height, int sizeTextBox, Program x,Label a)
         {
             if (buffer == null)
             {
-                buffer = new ConsoleBuffer(width,height,sizeTextBox,x);
+                buffer = new ConsoleBuffer(width,height,sizeTextBox,x,a);
             }
         }
         public static ConsoleBuffer ObteBuffer()
@@ -27,8 +29,9 @@ namespace TextAdventureXam
             return buffer;
         }
 
-        private ConsoleBuffer(int width, int height, int sizeTextBox,Program x)
+        private ConsoleBuffer(int width, int height, int sizeTextBox,Program x,Label a)
         {
+            this.pantalla = a;
             this.juego = x;
             this.width = width;
             this.height = height;
@@ -77,8 +80,10 @@ namespace TextAdventureXam
             //Console.SetCursorPosition(0, 0);
             for(int i = 0; i<lines.Length; i++)
             {
-                Console.WriteLine(lines[i]);
+                //Console.WriteLine(lines[i]);
+                pantalla.Text += lines[i] + "\n";
             }
+
 
             string str = "";
             for (int i = 0; i < width; i++)
