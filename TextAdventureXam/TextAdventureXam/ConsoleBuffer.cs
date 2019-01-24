@@ -81,13 +81,14 @@ namespace TextAdventureXam
             Device.BeginInvokeOnMainThread(() => {
                 //Console.SetCursorPosition(0, 0);
                 pantalla.Text = "";
-            for (int i = 0; i<temp.Length; i++)
-            {
-                //Console.WriteLine(lines[i]);               
-               
-                    pantalla.Text += temp[i]+"\n";
-                
-            }
+                for (int i = 0; i<temp.Length; i++)
+                {
+                    //Console.WriteLine(lines[i]);               
+                    pantalla.Text += temp[i];
+                    if (i < temp.Length - 1)
+                        pantalla.Text += "\n";
+            
+                }
             });
 
 

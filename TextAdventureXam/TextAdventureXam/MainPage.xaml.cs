@@ -15,7 +15,7 @@ namespace TextAdventureXam
             InitializeComponent();
             Program.CreaJuego();
             Program juego = Program.ObteJuego();
-            ConsoleBuffer.CreaBuffer(120, 20, 20 - 4, juego, texto1);
+            ConsoleBuffer.CreaBuffer(120, 19, 19 - 4, juego, texto1);
             Thread thrad = new Thread(new ThreadStart(juego.Antonio));
             thrad.Start();
             

@@ -10,7 +10,7 @@ namespace TextAdventureXam
     {
          public string comando; 
          readonly int width = 120;
-         readonly int height = 20;
+         readonly int height = 19;
          
          public Player pl;
          public List<Room> lvlLayout = null;
