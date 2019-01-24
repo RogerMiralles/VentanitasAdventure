@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
+
+
+
 
 namespace TextAdventureXam
 {
@@ -77,12 +77,17 @@ namespace TextAdventureXam
 
         public void PrintScreen()
         {
-            //Console.SetCursorPosition(0, 0);
-            for(int i = 0; i<lines.Length; i++)
+            Device.BeginInvokeOnMainThread(() => {
+                //Console.SetCursorPosition(0, 0);
+                pantalla.Text = "";
+            for (int i = 0; i<lines.Length; i++)
             {
-                //Console.WriteLine(lines[i]);
-                pantalla.Text += lines[i] + "\n";
+                //Console.WriteLine(lines[i]);               
+               
+                    pantalla.Text += lines[i];
+                
             }
+            });
 
 
             string str = "";
