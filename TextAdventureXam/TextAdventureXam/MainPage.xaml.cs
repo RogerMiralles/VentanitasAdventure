@@ -17,17 +17,19 @@ namespace TextAdventureXam
             Program juego = Program.ObteJuego();
             ConsoleBuffer.CreaBuffer(120, 19, 19 - 4, juego, texto1);
             Thread thrad = new Thread(new ThreadStart(juego.Antonio));
-            thrad.Start();
+            thrad.Start();           
             
             //TextBox.Text = "hola";
             //Label e = (Label) TextAdventureXam.texto1;
 
         }       
         
-        public void testEscribir(object sender,EventArgs e)
+        public void TestEscribir(object sender,EventArgs e)
         {
-            texto1.Text = "aaaaaa1234";
-                }
+            texto1.Text = "111";
+            
+            
+        }
 
         public void PalNorte(object sender, EventArgs e)
         {

@@ -3,32 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TextAdventureXam"
              x:Class="TextAdventureXam.MainPage">
-
-    
-    <StackLayout>
-        <!-- Place new controls here -->        
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="0.4*"/>
-            </Grid.RowDefinitions>
+    <ContentPage.Resources>
+        <ResourceDictionary>
             
-            <ScrollView x:Name="Textbox" BackgroundColor="Black" IsEnabled="True" 
-                    HeightRequest="700" Grid.Row="0" >
-                <Label x:Name="texto1" TextColor="White" Font="Consolas" FontSize="Small"></Label> 
-            </ScrollView>
-            
-            <StackLayout Grid.Row="1"  Orientation="Vertical" VerticalOptions="Center" >
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button  Text="te" Clicked="testEscribir"/>
-                    <Button  Text="Norte" Clicked="PalNorte"></Button>
-                    <Button  Text="Sur" Clicked="PalSur"></Button>
-                </StackLayout>
-                <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
-                    <Button Text="Este" Clicked="PalEste"></Button>
-                    <Button  Text="Oeste" Clicked="PalOeste"></Button>
-                </StackLayout>                                           
-            </StackLayout>            
-        </Grid>       
-    </StackLayout>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>            
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <ScrollView x:Name="Textbox" BackgroundColor="Black" IsEnabled="True" HeightRequest="425" 
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+                    <Label x:Name="texto1" TextColor="White" Font="Consolas" FontSize="Small" />
+                </ScrollView>
+                <Button Grid.Column="3" Grid.Row="1" Text="te" Clicked="TestEscribir"/>
+            </Grid>
+            <StackLayout x:Name="botonesMov" >
+                <Grid x:Name="grid" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.4*"/>
+                        <RowDefinition Height="0.4*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*" />
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Norte" Clicked="PalNorte" Grid.Row="0" Grid.Column="1" />
+                    <Button Text="Sur" Clicked="PalSur" Grid.Row="0" Grid.Column="2"/>
+                    <Button Text="Este" Clicked="PalEste" Grid.Row="1" Grid.Column="1"/>
+                    <Button Text="Oeste" Clicked="PalOeste" Grid.Row="1" Grid.Column="2"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>    
 </ContentPage>

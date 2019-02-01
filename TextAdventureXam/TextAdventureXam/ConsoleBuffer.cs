@@ -10,6 +10,7 @@ namespace TextAdventureXam
     class ConsoleBuffer
     {
         private Label pantalla;
+        
         private string[] lines;
         public int width;
         public int height;
@@ -31,7 +32,7 @@ namespace TextAdventureXam
 
         private ConsoleBuffer(int width, int height, int sizeTextBox,Program x,Label a)
         {
-            this.pantalla = a;
+            this.pantalla = a;            
             this.juego = x;
             this.width = width;
             this.height = height;
