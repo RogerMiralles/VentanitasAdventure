@@ -12,7 +12,7 @@
         <StackLayout>            
             <Grid ColumnSpacing="0" RowSpacing="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1.75*"/>
                     <RowDefinition Height="0.2*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -27,7 +27,7 @@
                 </ScrollView>
                 <Button Grid.Column="3" Grid.Row="1" Text="te" Clicked="TestEscribir"/>
             </Grid>
-            <StackLayout x:Name="botonesMov" >
+            <StackLayout x:Name="botonesMov">
                 <Grid x:Name="grid" ColumnSpacing="0" RowSpacing="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.4*"/>
